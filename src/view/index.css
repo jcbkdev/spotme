@@ -1,0 +1,30 @@
+:root {
+  --album-cover-color: rgb(255, 255, 255)
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+}
+
+div.main {
+  overflow: hidden;
+  height: 100vh;
+  margin-bottom: 100px;
+  background-color: #1e1e1e;
+  border-radius: 50px;
+}
+
+.drag {
+  display: block;
+  width: 100%;
+  height: 20px;
+  position: fixed;
+  -webkit-app-region: drag;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>spotme</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="play.css">
+    <!-- <script src="./scripts/auth/authtest.js"></script> -->
+    <script defer src="../scripts/player/player.js"></script>
+    <script defer src="../scripts/player/color.js"></script>
+    <script defer src="../scripts/player/slider.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="drag"></div>
+      <div class="play">
+        <img id="album-cover" src="../assets/avatar.png" alt="">
+        <button onclick="changeImage()">change image</button>
+        <div class="controls">
+          <div class="player-controls">
+            <button id="rewind-btn" class="control-btn">
+              <img src="../assets/rewind.svg" alt="">
+            </button>
+            <div class="play-control">
+              <button id="play-btn" class="control-btn play-btn">
+                <img id="play-btn-icon" src="../assets/play.svg" alt="">
+              </button>
+            </div>
+            <button id="skip-btn" class="control-btn">
+              <img src="../assets/skip.svg" alt="">
+            </button>
+          </div>
+          <button class="control-btn library-btn">
+            <img src="../assets/librabry.svg" alt="">
+          </button>
+          <div class="volume-controls">
+            <div class="volume-slider">
+              <input type="range" name="" id="volume-slider">
+              <div id="volume-slider-bg" class="slider-background"></div>
+            </div>
+            <button class="control-btn volume-btn">
+              <img src="../assets/volume.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <span class="gradient gradient-1" style="background-color: var(--album-cover-color)"></span>
+        <span class="gradient gradient-2" style="background-color: var(--album-cover-color)"></span>
+      </div>
+    </div>
+  </body>
+</html>

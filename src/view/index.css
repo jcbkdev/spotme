@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
-  --album-cover-color: rgb(255, 255, 255)
+  --album-cover-color: rgb(255, 255, 255);
+  --color-spotify: #1ED760;
 }
 
 html {
@@ -8,17 +11,23 @@ html {
 
 body {
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  color: white;
   margin: auto;
 }
 
 div.main {
+  position: relative;
   overflow: hidden;
   height: 100vh;
   margin-bottom: 100px;
   background-color: #1e1e1e;
   border-radius: 50px;
+}
+
+div.content {
+  position: relative;
+  z-index: 1;
 }
 
 .drag {
@@ -27,4 +36,26 @@ div.main {
   height: 20px;
   position: fixed;
   -webkit-app-region: drag;
+}
+
+.gradient {
+  position: absolute;
+  transition: background-color 1s ease;
+}
+
+.gradient-1 {
+  width: 300px;
+  height: 300px;
+  bottom: -123px;
+  right: -123px;
+  filter: blur(200px);
+}
+
+
+.gradient-2 {
+  width: 300px;
+  height: 300px;
+  top: -123px;
+  left: -88px;
+  filter: blur(200px);
 }
